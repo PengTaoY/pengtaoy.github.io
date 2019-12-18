@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<title>我的第一个 HTML 页面</title>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+</head>
+
+<body>
+<p>body 元素的内容会显示在浏览器中。</p>
+<p>title 元素的内容会显示在浏览器的标题栏中。</p>
+<a onclick = "showIP()" >展示IP地址跟对应的区域</a>
+</body>
+
+
+
+</html>
+<script>
+
+function showIP()
+{
+	alert(returnCitySN['cip'] + returnCitySN['cname']);
+}
+</script>
